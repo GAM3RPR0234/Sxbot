@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SXbot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <h1>SXbot</h1>
+        <p>Chatbot con modelos open source via Hugging Face</p>
+      </div>
+      <label class="model-picker">
+        Modelo
+        <select id="model-select"></select>
+      </label>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="chat-form" class="composer">
+      <textarea
+        id="message-input"
+        rows="2"
+        placeholder="Escribe tu mensaje..."
+        required
+      ></textarea>
+      <button type="submit" id="send-btn">Enviar</button>
+    </form>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
